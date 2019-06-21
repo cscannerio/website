@@ -1,0 +1,26 @@
+site_name: "CScanner"
+site_url: "https://cscanner.io/"
+markdown_extensions:
+  - admonition
+  - meta
+  - toc:
+      permalink: True
+      separator: "-"
+theme:
+  name: null
+  custom_dir: ./theme/
+plugins:
+  - macros
+nav:
+- 'Home': 'index.md'
+- 'Products': 'products/index.md'
+- 'Download': 'download/index.md'
+- 'Pricing': 'pricing/index.md'
+- 'What''s new?': 'updates/index.md'
+- 'Docs': 'https://docs.cscanner.io/'
+copyright: >
+  Copyright &copy; Janos Pasztor
+  | <a href="/security/">Security</a>
+  | <a href="/terms/">Terms</a>
+  | <a href="/imprint/">Imprint</a>
+  | <a href="/privacy/">Privacy</a>

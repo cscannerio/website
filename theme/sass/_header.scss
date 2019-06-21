@@ -1,0 +1,67 @@
+@import "variables";
+@import "container";
+@import "fonts";
+
+
+header.main {
+  background: $color_base;
+  width:100%;
+  height:$height_menu;
+  position: relative;
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+
+  body.page_style_custom & {
+    border-bottom: 1px solid $color_base_text;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  nav {
+    @include container;
+    @include sans;
+
+    display:flex;
+    height: $height_menu;
+    font-size:16px;
+
+    a {
+      display:block;
+      padding-top:5px;
+      padding-bottom:5px;
+      height: $height_menu - 10px;
+      line-height: $height_menu - 10px;
+      color:$color_base_text;
+      text-decoration: none;
+
+      img {
+        margin-top:5px;
+        margin-bottom:5px;
+        height:$height_menu - 20px;
+        margin-right:20px;
+      }
+
+      &:hover {
+        background-color:$color-highlight;
+      }
+    }
+
+    ul {
+      flex:1;
+      display:flex;
+      list-style-type: none;
+      justify-content: flex-end;
+      li {
+        display:block;
+        list-style-type: none;
+        a {
+          padding-left:10px;
+          padding-right:10px;
+        }
+      }
+    }
+  }
+}

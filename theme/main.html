@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <link rel="stylesheet" href="{{"css/main.css"|url}}" />
+
+    <meta name="description" content="{{ page.meta.description }}" />
+    <link rel="canonical" href="{{page.canonical_url | url}}" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="{{config.site_name|escape}}" />
+    <meta property="og:title" content="{{page.title}}"/>
+    <meta property="fb:admins" content="janoszen" />
+    <meta property="fb:app_id" content="1916868571905927" />
+    <meta property="fb:pages" content="190725044900185" />
+    <meta property="og:image" content="{{"img/opengraph.png" | url}}" />
+    <meta property="og:url" content="{{page.canonical_url|url}}" />
+    <meta property="og:description" content="{{ page.meta.description | escape }}" />
+
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="application-name" content="{{ config.site_name }}" />
+    <meta name="msapplication-starturl" content="{{config.base_url}}" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="theme-color" content="#2980B9" />
+    <meta name="msapplication-navbutton-color" content="#2980B9" />
+    <meta name="msapplication-TileColor" content="#2980B9" />
+    <meta name="msapplication-TileImage" content="{{ "img/tileicon.png" | url }}" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+</head>
+<body class="page_style_{{page.meta.page_style}}">
+    <header class="container main">
+        <nav role="navigation">
+            <a href="/" role="button">
+                <img src="{{"img/header.svg"|url}}" alt="Cscanner" />
+            </a>
+            <ul role="menu">
+                {% for nav_item in nav %}
+                    <li class="{% if nav_item.active%}current{% endif %}" role="menuitem">
+                        <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    {% if page.meta.page_style == "custom" %}
+        {{ page.content }}
+    {% else %}
+        <div class="container">
+            {{ page.content }}
+        </div>
+    {% endif %}
+</body>
+</html>
