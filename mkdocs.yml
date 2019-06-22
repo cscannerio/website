@@ -4,7 +4,7 @@ markdown_extensions:
   - admonition
   - meta
   - toc:
-      permalink: True
+      permalink: " "
       separator: "-"
 theme:
   name: null
@@ -13,9 +13,9 @@ plugins:
   - macros
 nav:
 - 'Home': 'index.md'
-- 'Products': 'products/index.md'
-- 'Download': 'download/index.md'
+- 'Compare Editions': 'products/index.md'
 - 'Pricing': 'pricing/index.md'
+- 'Download': 'download/index.md'
 - 'What''s new?': 'updates/index.md'
 - 'Docs': 'https://docs.cscanner.io/'
 copyright: >
@@ -24,3 +24,6 @@ copyright: >
   | <a href="/terms/">Terms</a>
   | <a href="/imprint/">Imprint</a>
   | <a href="/privacy/">Privacy</a>
+extra:
+  Y: <span class="yes">Yes</span>
+  N: <span class="no">No</span>

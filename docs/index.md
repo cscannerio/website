@@ -12,3 +12,4 @@ page_style: custom
         <img src="hero_scan.svg" alt="" class="hero__scan" />
     </div>
 </div>
+
