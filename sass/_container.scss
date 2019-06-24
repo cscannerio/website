@@ -1,0 +1,22 @@
+@mixin container {
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+
+  @media (min-width: 720px) {
+    width:720px;
+  }
+  @media (min-width: 960px) {
+    width:960px;
+  }
+  @media (min-width: 1280px) {
+    width:1280px;
+  }
+  @media (min-width: 1960px) {
+    width:1960px;
+  }
+}
+
+.container {
+  @include container;
+}

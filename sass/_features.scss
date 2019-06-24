@@ -1,0 +1,23 @@
+@import "variables";
+
+.yes {
+  &::before {
+    content:"✓";
+    color: $color_yes;
+    visibility: visible;
+    font-weight: bold;
+    font-size:$font_size;
+  }
+  visibility: hidden;
+}
+
+.no {
+  &::before {
+    content:"✖";
+    color: $color_no;
+    visibility: visible;
+    font-weight: bold;
+    font-size:$font_size;
+  }
+  visibility: hidden;
+}
