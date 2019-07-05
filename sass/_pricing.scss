@@ -23,17 +23,17 @@
     padding: $font_size/2;
     text-align: center;
   }
-  &__plan--community &__header, &__plan--community &__footer button, &__plan--community &__body li a:hover {
-    color: $color_community_text;
-    background-color: $color_community;
+  &__plan--core &__header, &__plan--core &__footer button, &__plan--core &__body li a:hover {
+    color: $color_core_text;
+    background-color: $color_core;
   }
-  &__plan--basic &__header, &__plan--basic &__footer button, &__plan--basic &__body li a:hover {
-    color: $color_basic_text;
-    background-color: $color_basic;
+  &__plan--standalone &__header, &__plan--standalone &__footer button, &__plan--standalone &__body li a:hover {
+    color: $color_standalone_text;
+    background-color: $color_standalone;
   }
-  &__plan--advanced &__header , &__plan--advanced &__footer button, &__plan--advanced &__body li a:hover {
-    color: $color_advanced_text;
-    background-color: $color_advanced;
+  &__plan--sp &__header , &__plan--sp &__footer button, &__plan--sp &__body li a:hover {
+    color: $color_sp_text;
+    background-color: $color_sp;
   }
   &__plan--enterprise &__header, &__plan--enterprise &__footer button, &__plan--enterprise &__body li a:hover {
     color: $color_enterprise_text;

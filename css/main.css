@@ -396,15 +396,15 @@ header.main nav ul li a {
   padding: 7px;
   text-align: center;
 }
-.pricing__plan--community .pricing__header, .pricing__plan--community .pricing__footer button, .pricing__plan--community .pricing__body li a:hover {
+.pricing__plan--core .pricing__header, .pricing__plan--core .pricing__footer button, .pricing__plan--core .pricing__body li a:hover {
   color: #fff;
   background-color: #b98029;
 }
-.pricing__plan--basic .pricing__header, .pricing__plan--basic .pricing__footer button, .pricing__plan--basic .pricing__body li a:hover {
+.pricing__plan--standalone .pricing__header, .pricing__plan--standalone .pricing__footer button, .pricing__plan--standalone .pricing__body li a:hover {
   color: #fff;
   background-color: #29b980;
 }
-.pricing__plan--advanced .pricing__header, .pricing__plan--advanced .pricing__footer button, .pricing__plan--advanced .pricing__body li a:hover {
+.pricing__plan--sp .pricing__header, .pricing__plan--sp .pricing__footer button, .pricing__plan--sp .pricing__body li a:hover {
   color: #fff;
   background-color: #2a94cd;
 }
