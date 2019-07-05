@@ -1,7 +1,7 @@
 title: Pricing
 
 <div class="pricing">
-    <div class="pricing__plan pricing__plan--community">
+    <div class="pricing__plan pricing__plan--core">
         <div class="pricing__header">
             <h2 class="pricing__heading">Core</h2>
             <div class="pricing__subheading">Free and Open Source</div>
@@ -15,7 +15,7 @@ title: Pricing
             <a href=""><button>Download now!</button></a>
         </div>
     </div>
-    <div class="pricing__plan pricing__plan--basic">
+    <div class="pricing__plan pricing__plan--standalone">
         <div class="pricing__header">
             <h2 class="pricing__heading">Standalone</h2>
             <div class="pricing__subheading">97 &euro; / year<sup>1</sup></div>
