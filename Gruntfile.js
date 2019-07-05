@@ -16,11 +16,25 @@ module.exports = function (grunt) {
                 files: '**/*.scss',
                 tasks: ['sass']
             }
+        },
+        exec: {
+            mkdocs: "mkdocs serve"
+        },
+        concurrent: {
+            options: {
+                logConcurrentOutput: true
+            },
+            serve: {
+                tasks: ["watch", "exec:mkdocs"]
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default',['watch']);
+    grunt.loadNpmTasks('grunt-exec');
+    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.registerTask('default', ['watch']);
     grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['concurrent:serve']);
 };

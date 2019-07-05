@@ -13,7 +13,6 @@ plugins:
   - macros
 nav:
 - 'Home': 'index.md'
-- 'Compare Editions': 'products/index.md'
 - 'Pricing': 'pricing/index.md'
 - 'Download': 'download/index.md'
 - 'What''s new?': 'updates/index.md'

@@ -25,7 +25,7 @@ title: Pricing
             <li><a href="#dashboard">Dashboard</a></li>
             <li><a href="#api">API</a></li>
             <li><a href="#tracking">Violation tracking</a></li>
-            <li><a href="#vmware">VMWare support</a></li>
+            <li><a href="#support">Ticket support</a></li>
         </ul>
         <div class="pricing__footer">
             <a href=""><button>Buy now!</button></a>
@@ -60,8 +60,6 @@ title: Pricing
         </div>
     </div>
 </div>
-
-&raquo; Student, school or other educational institution? [Apply for an educational license for free!](edu/index.md)
 
 <sup>1</sup> per installation, perpetual fallback license to the version available during 
 support period.
@@ -113,13 +111,91 @@ support period.
     </div>
     <div class="features__feature feature">
         <div class="feature__header">
-            <img src="console.jpg" alt="" />
+            <img src="dashboard.jpg" alt="" />
             <h2 id="dashboard">Dashboard</h2>
         </div>
         <div class="feature__content">
             <p>
                 Cscanner Basic and up contains a web dashboard you can use to configure
                 Cscanner, start scans, and view violations in a list. 
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div class="features__feature feature">
+        <div class="feature__header">
+            <img src="api.jpg" alt="" />
+            <h2 id="api">API</h2>
+        </div>
+        <div class="feature__content">
+            <p>
+                Integrate cscanner with other tools or automate processes using the API. Every function available
+                from the dashboard is also available using the API.
+            </p>
+        </div>
+    </div>
+    <div class="features__feature feature">
+        <div class="feature__header">
+            <img src="violation.jpg" alt="" />
+            <h2 id="violation">Violation tracking</h2>
+        </div>
+        <div class="feature__content">
+            <p>
+                Track compliance violations on the dashboard and get confirmation when it is fixed.  
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div class="features__feature feature">
+        <div class="feature__header">
+            <img src="support.jpg" alt="" />
+            <h2 id="ticket">Ticket support</h2>
+        </div>
+        <div class="feature__content">
+            <p>
+                Get support for your cscanner installation via tickets.
+            </p>
+        </div>
+    </div>
+    <div class="features__feature feature">
+        <div class="feature__header">
+            <img src="periodic.jpg" alt="" />
+            <h2 id="periodic">Periodic scanning</h2>
+        </div>
+        <div class="feature__content">
+            <p>
+                Cscanner advanced automatically runs periodic checks on your configured cloud accounts and reports 
+                violations automatically.  
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div class="features__feature feature">
+        <div class="feature__header">
+            <img src="keyserver.jpg" alt="" />
+            <h2 id="keyserver">Keyserver support</h2>
+        </div>
+        <div class="feature__content">
+            <p>
+                Store your cloud credentials in a keyserver instead of cscanner.
+            </p>
+        </div>
+    </div>
+    <div class="features__feature feature">
+        <div class="feature__header">
+            <img src="saml.jpg" alt="" />
+            <h2 id="saml">SAML login</h2>
+        </div>
+        <div class="feature__content">
+            <p>
+                Connect the cscanner dashboard to your enterprises login system and make sure only authorized personnel
+                can access the dashboard.   
             </p>
         </div>
     </div>
